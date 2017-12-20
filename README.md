@@ -12,8 +12,7 @@ Install Fetch as an npm module and save it to your package.json file as a depend
 
 ## Usage
 Library provides `fetch()` method. It accepts string url as necessary parameter and optional object
-with property `param: Params`. `Params` type extends Map, therefore to set params of request use `set()` method
-with the name and value arguments.
+with properties `param: Params` and `headers: Headers`. `Params` and `Headers` types extend `Map`, therefore to set params or headers of request use `set()` method with the name and value arguments.
 
 `fetch()` method returns promise that resolves to `Response` type object. Use `res.json()` to get json result.
 
